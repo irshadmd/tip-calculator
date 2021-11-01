@@ -1,0 +1,54 @@
+.calci-title{
+    padding: 4%;
+    text-align: center;
+}
+.calci{
+    padding: 2%;
+    border-radius: 11px;
+    background: #ffffff;
+    box-shadow:  27px 27px 54px #e6e6e6,-27px -27px 54px #ffffff;
+    margin: auto;
+    border: 0.4px solid grey;
+}
+.left{
+    border-right: 1px solid grey;
+}
+.right{
+    padding: 2%;
+}
+.bill-container,.tip-container,.num-people-container{
+    padding: 2% 4%;
+}
+.bill-container input{
+    width: 80%;
+}
+.tip-container{
+    display: inline-block;
+}
+.tip-container input,.num-people-container input{
+    margin-left: -6px;
+}
+input{
+    text-align: center;
+    outline: none;
+}
+.minus,.plus{
+    border: 0.4px solid grey;
+    width: 30px;
+    height: 30px;
+}
+.plus{
+    margin-left: -6px;
+}
+.tip-pp,.total-pp,.tip-amount,.total-amount{
+    height: 100px;
+    padding: 10%;
+}
+
+h5{
+    color: gray;
+    font-weight: 400;
+}
+#ti-pp,#to-pp{
+    display: none;
+}

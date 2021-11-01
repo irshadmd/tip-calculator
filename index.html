@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container calci-title">
+        <h1>Tip Calculator</h1>
+        <hr />
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 calci">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="left">
+                            <div class="bill-container">
+                                <label for="bill-input">Bill</label>
+                                <br />
+                                <input type="text" onchange="billChange()" id="bill-input" value="0.00">
+                            </div>
+                            <div class="tip-container">
+                                <label for="tip-input">Tip %</label>
+                                <br>
+                                <button class="minus" onclick="minusTip()">-</button>
+                                <input type="text" id="tip-input" onchange="tipChange()" value="0">
+                                <button class="plus" onclick="plusTip()">+</button>
+                            </div>
+                            <div class="num-people-container">
+                                <label for="num-people-input">Number of people</label>
+                                <br />
+                                <button class="minus" onclick="minusNumPeople()">-</button>
+                                <input type="text" id="num-people-input" onchange="numPeopleChange()" value="1">
+                                <button class="plus" onclick="plusNumPeople()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 right">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="tip-pp">
+                                    <h3>Tip</h3>
+                                    <h5 id="ti-pp">per person</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="tip-amount">
+                                    <h2><span>$</span><span id="tip-amt">00.00</span></h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="total-pp">
+                                    <h3>Total</h3>
+                                    <h5 id="to-pp">per person</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="total-amount">
+                                    <h1><span>$</span><span id="total-amt">00.00</span></h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
